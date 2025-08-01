@@ -59,8 +59,19 @@ export interface ButtonProps {
   disabled?: boolean;
 }
 
-// Props for Layout (optional if needed)
+
 export interface LayoutProps {
   children: ReactNode;
+}
+
+export interface Review {
+  avatar: string;
+  name: string;
+  rating: number;
+  comment: string;
+}
+
+export interface ReviewSectionProps {
+  reviews: Review[];
 }
 
